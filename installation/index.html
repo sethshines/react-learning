@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Installing React to HTML Page</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- CDN Imports for React -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="./rootComponent.js"></script>
+</head>
+<body>
+    <div id="app"></div>
+    <script type="text/javascript">
+           const root = ReactDOM.createRoot(document.getElementById('app'));
+            root.render(React.createElement(rootDiv, {
+                name: 'Rahul Seth'
+            }));
+    </script>
+</body>
+</html>
